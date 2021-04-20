@@ -1,37 +1,31 @@
 ﻿using System;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 namespace WhatADayVS
 {
-    class Time
-    {
-        public int Hour { get; private set; }
-        public int Minute { get; private set; }
-        public Time(int hour,int minute)
-        {
-            if (minute <= 59 && minute >= 0)
-            {
-                Minute = minute;
-            }
-            if (hour <= 23 && hour >= 0)
-            {
-                Hour = hour;
-            }
-        }
-        public Time(DateTime dateTime)
-        {
-            Hour = dateTime.Hour;
-            Minute = dateTime.Minute;
-        }
-        public override string ToString()
-        {
-            return string.Format("{0:00}:{1:00}",Hour,Minute);
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+            Task Event = new Task("Crossing","Just run",new Time(12,30),new Time(13,10),new DateTime(DateTime.Now.Year, DateTime.Now.Month,21));
+            List<Task> events = new List<Task>();
+            events.Add(Event);
+            Day[] month = new Day[DateTime.DaysInMonth(DateTime.Now.Year,DateTime.Now.Month)];
+            for(int i = 0; i < month.Length; i++)
+            {
+                month[i] = new Day { Date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, i + 1) };
+                foreach (Task mark in events)
+                {
+                    if(mark.Date == month[i].Date)
+                        month[i].Event = mark;           
+                }
+            }
+            foreach(Day day in month)
+            {
+                Console.WriteLine($"{day.Date.ToShortDateString()} {day.DayOfWeek}");
+                if(day.Event != null)
+                    Console.WriteLine($"{ day.Event}");
+            }
         }
     }
 }

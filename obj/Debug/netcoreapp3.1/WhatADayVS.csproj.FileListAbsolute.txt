@@ -11,3 +11,5 @@ D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.csproj.Cor
 D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.dll
 D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.pdb
 D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.genruntimeconfig.cache
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.csproj.CopyComplete
