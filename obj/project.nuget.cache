@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "z6TwKfqyCap902UJWFxz5Vrmeo+a3nC9/Cp7K8g/KxJRj5jcJuvGAR0GIGHdAAoP3G0hT6WXnSdbQiKgL5mu6g==",
+  "dgSpecHash": "F+U4eOuOmysiaAz+ihauGz4xl4dhgq+y/0NGtFXiRcwzzUaDEpS3ReUiE5jTEF6E3SnU75PSQLKx48rjBwBIbw==",
   "success": true,
   "projectFilePath": "D:\\Programming\\WhatADay\\WhatADayVS\\WhatADayVS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Max\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
