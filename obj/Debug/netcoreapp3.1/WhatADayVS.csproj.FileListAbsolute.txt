@@ -1,0 +1,13 @@
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\WhatADayVS.exe
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\WhatADayVS.deps.json
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\WhatADayVS.runtimeconfig.json
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\WhatADayVS.runtimeconfig.dev.json
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\WhatADayVS.dll
+D:\Programming\WhatADay\WhatADayVS\bin\Debug\netcoreapp3.1\WhatADayVS.pdb
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.csprojAssemblyReference.cache
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.AssemblyInfoInputs.cache
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.AssemblyInfo.cs
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.csproj.CoreCompileInputs.cache
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.dll
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.pdb
+D:\Programming\WhatADay\WhatADayVS\obj\Debug\netcoreapp3.1\WhatADayVS.genruntimeconfig.cache
