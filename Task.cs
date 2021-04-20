@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 namespace WhatADayVS
 {
     class Task
@@ -9,6 +10,7 @@ namespace WhatADayVS
         public Time EndsAt { get; set; }
         public DateTime Date { get; set; }
 
+        [JsonConstructor]
         public Task(string Title, string Description,Time StartsAt,Time EndsAt,DateTime Date)
         {
             this.Title = Title;

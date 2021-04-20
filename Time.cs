@@ -1,10 +1,12 @@
 ﻿using System;
+using Newtonsoft.Json;
 namespace WhatADayVS
 {
     class Time
     {
         public int Hour { get; private set; }
         public int Minute { get; private set; }
+        [JsonConstructor]
         public Time(int hour,int minute)
         {
             if (minute <= 59 && minute >= 0)
