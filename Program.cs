@@ -8,13 +8,15 @@ namespace WhatADayVS
             DataController.Load();
             Model.SelectYear(2021);
             Model.LoadTasks();
-            foreach (Day day in Model.current_year[DateTime.Now.Month - 1])
+            Model.MonthToConsole(DateTime.Now.Month-1);
+            while (true)
             {
-                Console.WriteLine($"{day.Date.ToShortDateString()} {day.DayOfWeek}");
-                if (day.Event != null)
-                    Console.WriteLine($"{day.Event}");
+                Controller.ExecuteCommand(Console.ReadLine());
+                Console.Clear();
+                Model.LoadTasks();
+                Model.MonthToConsole(DateTime.Now.Month - 1);
+                DataController.Save();
             }
-            DataController.Save();
         }
     }
 }

@@ -21,6 +21,15 @@ namespace WhatADayVS
             }
             return current_year;
         }
+        public static void MonthToConsole(int number)
+        {
+            foreach (Day day in Model.current_year[number])
+            {
+                Console.WriteLine($"{day.Date.ToShortDateString()} {day.DayOfWeek}");
+                if (day.Event != null)
+                    Console.WriteLine($"{day.Event}");
+            }
+        }
         public static void LoadTasks()
         {
             foreach(Day[] month in current_year)

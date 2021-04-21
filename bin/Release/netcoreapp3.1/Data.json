@@ -1,1 +1,1 @@
-[]
+[{"Title":"Test","Description":"Test","StartsAt":{"Hour":12,"Minute":30},"EndsAt":{"Hour":13,"Minute":20},"Date":"2021-04-22T00:00:00"},{"Title":"Another test","Description":"test","StartsAt":{"Hour":23,"Minute":30},"EndsAt":{"Hour":0,"Minute":20},"Date":"2021-04-30T00:00:00"},{"Title":"Test","Description":"Test","StartsAt":{"Hour":12,"Minute":55},"EndsAt":{"Hour":23,"Minute":20},"Date":"2021-04-27T00:00:00"}]
