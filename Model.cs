@@ -6,9 +6,10 @@ namespace WhatADayVS
     {
         public static List<Task> Events = new List<Task>();
         public static Day[][] current_year = new Day[12][];
+        private static int current_month;
+        public static int CurrentMonth { get => current_month; private set => current_month = value; }
         public static Day[][] SelectYear(int year_number)
         {
-
             for (int i = 0; i < current_year.Length; i++)
             {
                 int month_number = i + 1;
@@ -23,22 +24,26 @@ namespace WhatADayVS
         }
         public static void MonthToConsole(int number)
         {
-            foreach (Day day in Model.current_year[number])
-            {
-                Console.WriteLine($"{day.Date.ToShortDateString()} {day.DayOfWeek}");
-                if (day.Event != null)
-                    Console.WriteLine($"{day.Event}");
-            }
+
+                current_month = number;
+                Model.LoadTasks();
+                Console.Clear();
+                foreach (Day day in Model.current_year[number])
+                {
+                    Console.WriteLine($"{day.Date.ToShortDateString()} {day.DayOfWeek}");
+                    if (day.Event != null)
+                        Console.WriteLine($"{day.Event}");
+                }
         }
         public static void LoadTasks()
         {
-            foreach(Day[] month in current_year)
+            foreach (Day[] month in current_year)
             {
-                for(int i = 0; i < month.Length; i++)
+                for (int i = 0; i < month.Length; i++)
                 {
-                    foreach(Task task in Events)
+                    foreach (Task task in Events)
                     {
-                        if(month[i].Date == task.Date)
+                        if (month[i].Date == task.Date)
                         {
                             month[i].Event = task;
                         }

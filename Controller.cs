@@ -50,10 +50,26 @@ namespace WhatADayVS
                 AddTask();
             }
         }
+        private static void Next()
+        {
+            if (Model.CurrentMonth + 1 < 12)
+                Model.MonthToConsole(Model.CurrentMonth + 1);
+        }
+        private static void Previous()
+        {
+            if (Model.CurrentMonth - 1 > 0)
+                Model.MonthToConsole(Model.CurrentMonth - 1);
+        }
         public static void ExecuteCommand(string command)
         {
             switch (command)
             {
+                case "next":
+                    Next();
+                    break;
+                case "previous":
+                    Previous();
+                    break;
                 case "select year":
                     Console.Write("Write year : ");
                     int year = Convert.ToInt32(Console.ReadLine());
@@ -63,13 +79,13 @@ namespace WhatADayVS
                     }
                     else
                         throw new AggregateException("Wrong year!");
-                    Model.MonthToConsole(0);
+                    Model.MonthToConsole(Model.CurrentMonth);
                     break;
                 case "select":
                     Console.Write("Write month : ");
                     int month = Convert.ToInt32(Console.ReadLine());
                     if (month > 0 && month < 13)
-                        Model.MonthToConsole(month);
+                        Model.MonthToConsole(month-1);
                     else
                         throw new AggregateException("Wrong month!");
                     break;

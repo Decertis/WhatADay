@@ -12,9 +12,6 @@ namespace WhatADayVS
             while (true)
             {
                 Controller.ExecuteCommand(Console.ReadLine());
-                Console.Clear();
-                Model.LoadTasks();
-                Model.MonthToConsole(DateTime.Now.Month - 1);
                 DataController.Save();
             }
         }
