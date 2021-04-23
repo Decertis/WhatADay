@@ -55,11 +55,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\WhatADay\\WhatADayVS\\WhatADayVS.csproj",
+      "projectUniqueName": "D:\\Programming\\WhatADay\\WhatADay\\WhatADayVS.csproj",
       "projectName": "WhatADayVS",
-      "projectPath": "D:\\Programming\\WhatADay\\WhatADayVS\\WhatADayVS.csproj",
+      "projectPath": "D:\\Programming\\WhatADay\\WhatADay\\WhatADayVS.csproj",
       "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\WhatADay\\WhatADayVS\\obj\\",
+      "outputPath": "D:\\Programming\\WhatADay\\WhatADay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
