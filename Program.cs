@@ -5,6 +5,7 @@ namespace WhatADayVS
     {
         static void Main(string[] args)
         {
+            //TEST
             DataController.Load();
             Model.SelectYear(2021);
             Model.LoadTasks();
